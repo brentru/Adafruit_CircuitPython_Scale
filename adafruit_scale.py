@@ -42,6 +42,7 @@ Implementation Notes
 
 import time
 from pulseio import PulseIn
+from micropython import const
 
 OUNCES = const(0x0B)   # data in weight is in ounces
 GRAMS = const(0x02)    # data in weight is in grams
@@ -62,7 +63,7 @@ class Scale:
         self.dymo = PulseIn(pin, maxlen=96, idle_state=True)
         try:
             self.check_scale()
-        except RuntimeError as e:
+        except RuntimeError:
             raise RuntimeError("Failed to inititalize the scale, is the scale on?")
         # units we're measuring
         self.units = None
