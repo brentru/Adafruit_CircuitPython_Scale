@@ -13,7 +13,7 @@ Introduction
     :target: https://travis-ci.com/adafruit/Adafruit_CircuitPython_scale
     :alt: Build Status
 
-CircuitPython helper library for dymo scales
+CircuitPython helper library for the `DYMO M25 Digital Postage Scale <http://www.dymo.com/en-US/digital-postal-scales/m25lb-digital-postal-scale>`_.
 
 
 Dependencies
@@ -28,10 +28,6 @@ This is easily achieved by downloading
 
 Installing from PyPI
 --------------------
-.. note:: This library is not available on PyPI yet. Install documentation is included
-   as a standard element. Stay tuned for PyPI availability!
-.. todo:: Remove the above note if PyPI version is/will be available at time of release.
-   If the library is not planned for PyPI, remove the entire 'Installing from PyPI' section.
 On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
 PyPI <https://pypi.org/project/adafruit-circuitpython-scale/>`_. To install for current user:
 
